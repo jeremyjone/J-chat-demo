@@ -205,9 +205,10 @@ class ChatTextWidget(QtGui.QWidget):
 
 
 class ChatWidget(QtGui.QWidget):
-    def __init__(self, item, parent=None):
+    def __init__(self, item, parentItem, parent=None):
         super(ChatWidget, self).__init__(parent)
         self._item = item
+        self._parentItem = parentItem
         self.isGroup = self.item["isGroup"]
         # self.isGroup = True  # Group test switch.
         self.initUI()
@@ -256,4 +257,6 @@ class ChatWidget(QtGui.QWidget):
         # Made vertical scrollbar always stay bottom.
         self.msgScrollArea.verticalScrollBar().setSliderPosition(self.msgScrollArea.verticalScrollBar().maximum())
 
-
+    def closeEvent(self, *args, **kwargs):
+        self._parentItem.chatWindow = None
+        super(ChatWidget, self).closeEvent(*args, **kwargs)

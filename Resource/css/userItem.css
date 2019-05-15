@@ -2,3 +2,7 @@
     background-color: #CCDDDD;
     border-radius: 7px;
 }
+
+QMenu {
+    font-size: 12px;
+}

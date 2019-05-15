@@ -17,6 +17,78 @@ from widget.userItemWidget import UserItem
 from config.conModel import CONFIG
 
 
+TEST_ITEM = [
+    {
+        "UserName": "Jz",
+        "Avatar": "./Resource/image/Avatar/Jz.png",
+        "Signature": u"你是我的小苹果",
+        "ChatMessage": [
+            {
+                "Id": "j08q9234fh8q34f09wur34",
+                "Date": "2019-5-1 12:20:36",
+                "Message": u"你好",
+            },
+            {
+                "Id": "jmwer098gfjh2q39804jhf",
+                "Date": "2019-5-1 12:20:48",
+                "Message": u"我知道",
+            },
+            {
+                "Id": "jf092q34jf34jf834098ua",
+                "Date": "2019-5-1 13:01:02",
+                "Message": u"这是啥",
+            },
+            {
+                "Id": "jf0983j98t23479u2340rd",
+                "Date": "2019-5-1 14:05:40",
+                "Message": u"埃及活动GIFUA贺岁发哈根达斯富奥斯卡吉利丁粉海菊沙发上发挥",
+            },
+        ]
+    },
+    {
+        "UserName": "123",
+        "Avatar": "./Resource/image/Avatar/123.png",
+    },
+    {
+        "UserName": "aaa",
+        "Avatar": "./Resource/image/Avatar/aaa.png",
+    },
+    {
+        "UserName": "bbb",
+        "Avatar": "./Resource/image/Avatar/bbb.png",
+        "Signature": "Beautiful",
+    },
+    {
+        "UserName": "ccc",
+        "Avatar": "./Resource/image/Avatar/ccc.png",
+    },
+    {
+        "UserName": "ddd",
+        "Avatar": "./Resource/image/Avatar/ddd.png",
+    },
+    {
+        "UserName": "eee",
+        "Avatar": "./Resource/image/Avatar/eee.png",
+    },
+    {
+        "UserName": "fff",
+        "Avatar": "./Resource/image/Avatar/fff.png",
+        "Signature": "Hello",
+    },
+    {
+        "UserName": "ggg",
+        "Avatar": "./Resource/image/Avatar/ggg.png",
+    },
+    {
+        "UserName": "xyz",
+        "Avatar": "./Resource/image/Avatar/xyz.png",
+    },
+]
+
+
+
+
+
 class CategoryItem(QtGui.QWidget):
     def __init__(self, categoryName, parent=None):
         super(CategoryItem, self).__init__(parent)
@@ -53,7 +125,7 @@ class CategoryItem(QtGui.QWidget):
         self.categoryLabel.setText(name)
 
     def addUserItem(self):
-        for item in range(10):
+        for item in TEST_ITEM:
             userItem = UserItem(item)
             self.userLayout.addWidget(userItem)
 

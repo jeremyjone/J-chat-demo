@@ -9,6 +9,7 @@ import PySide.QtGui as QtGui
 import PySide.QtCore as QtCore
 
 from widget import UILoader, circleAvatar
+from config.jzChat import JzChat
 
 
 class GroupItem(QtGui.QDialog):
@@ -43,9 +44,9 @@ class GroupItem(QtGui.QDialog):
 
         # Checked and unchecked styles.
         if flag:
-            css += "#GroupItemWidget {background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.1 rgba(202, 202, 202, 255), stop:0.2 rgba(180, 180, 180, 255), stop:0.5 rgba(130, 130, 130, 255), stop:0.8 rgba(180, 180, 180, 255), stop:0.9 rgba(202, 202, 202, 222), stop:1 rgba(255, 255, 255, 150));}"
+            css += "#GroupItemWidget %s" % JzChat.GroupItemHover
         else:
-            css += "#GroupItemWidget {background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(255, 255, 255, 255), stop:0.1 rgba(222, 222, 222, 255), stop:0.2 rgba(200, 200, 200, 255), stop:0.5 rgba(150, 150, 150, 255), stop:0.8 rgba(200, 200, 200, 255), stop:0.9 rgba(222, 222, 222, 222), stop:1 rgba(255, 255, 255, 150));}"
+            css += "#GroupItemWidget %s" % JzChat.GroupItemNormal
 
         self.setStyleSheet(css)
 
