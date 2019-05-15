@@ -1,0 +1,35 @@
+#titleWidget {
+    border-top-left-radius: 7px;border-top-right-radius: 7px;
+    background-image: url(./Resource/image/background_title_2.png)
+}
+
+#APPNameLabel, #titleTextLabel {
+    color: #9B9B9B;
+}
+
+#minWinBtn {
+    background-color: #00D92A;
+    border-radius:8px;
+}
+
+#minWinBtn:hover {
+    background-color: #2DB718;
+}
+
+#minWinBtn:pressed {
+    background-color: #27A017;
+}
+
+#closeWinBtn {
+    background-color: #FE6152;
+    border-radius:8px;
+}
+
+#closeWinBtn:hover {
+    background-color: #FF3424;
+}
+
+#closeWinBtn:pressed {
+    background-color: #FF0000;
+}
+

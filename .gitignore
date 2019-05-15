@@ -1,0 +1,13 @@
+
+.idea/*.xml
+*.pyc
+.idea/chat_test.iml
+.idea/dictionaries/jeremyjone.xml
+.idea/JzChat.iml
+test.py
+JzChatConfig.ini
+test2.py
+test2.py
+Resource/font/msyh.ttc
+Resource/font/msyhbd.ttc
+Resource/font/msyhl.ttc

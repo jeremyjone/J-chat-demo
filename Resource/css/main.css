@@ -1,0 +1,32 @@
+#MainPanel {
+    background-color: #FF4BF2;
+    border-radius: 7px;
+}
+
+#userScrollArea{
+    border-color: rgb(255, 255, 255);
+}
+
+#selfUsername, #selfUserInfo, #selfState {
+    color: #F8F8F2;
+    font-weight: bold;
+}
+
+#groupListBtn:hover, #personListBtn:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(160, 180, 200, 150), stop:0.1 rgba(70, 99, 109, 255), stop:0.5 rgba(32, 52, 72, 255), stop:0.9 rgba(70, 99, 109, 255), stop:1 rgba(160, 180, 200, 150));
+}
+
+#groupListBtn, #personListBtn {
+    color: #F8F8F2;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(160, 180, 200, 150), stop:0.1 rgba(100, 129, 139, 255), stop:0.5 rgba(52, 72, 92, 255), stop:0.9 rgba(100, 129, 139, 255), stop:1 rgba(160, 180, 200, 150));
+}
+
+#personListBtn {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#groupListBtn {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

@@ -1,0 +1,8 @@
+QWidget {
+    font-size: 12px;
+}
+
+
+#scrollArea {
+    background-color: rgb(255, 255, 255);
+}
